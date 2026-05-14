@@ -57,6 +57,7 @@ with mp_hands.Hands(min_detection_confidence=0.7, min_tracking_confidence=0.7, m
                 fly_right = thumb_tip_sign_x > thumb_base_sign_x and index_tip_sign_x > index_base_sign_x and middle_tip_sign_x > middle_base_sign_x and ring_tip_sign_x > ring_base_sign_x and pinky_tip_sign_x > pinky_base_sign_x and index_tip_sign_y < middle_tip_sign_y < ring_tip_sign_y < pinky_tip_sign_y
                 
                 stop = thumb_tip_sign_y < index_base_sign_y and thumb_tip_sign_y < middle_base_sign_y and thumb_tip_sign_y < ring_base_sign_y and thumb_tip_sign_y < pinky_base_sign_y and index_tip_sign_y > index_base_sign_y and middle_tip_sign_y > middle_base_sign_y and ring_tip_sign_y > ring_base_sign_y and pinky_tip_sign_y > pinky_base_sign_y and wrist_sign_y > thumb_tip_sign_y                 
+                
                 # 3. DEFINE THE GESTURE
                 
                 if fly_upwards:
